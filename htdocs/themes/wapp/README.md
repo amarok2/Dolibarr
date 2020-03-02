@@ -1,5 +1,5 @@
 # Theme Wapp for Dolibarr 11.x
-The theme is now compatible with Dolibarr 11 (work in progress)
+The theme is compatible with Dolibarr 11 (work in progress)
 
 ## Contributors
 Nicolas PERE (nicolas@wapp.fr)<br>
