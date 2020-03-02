@@ -1,5 +1,5 @@
-# Theme Amarok2 for Dolibarr 6.x
-This is a theme i create some years ago, and try to improve and make it compatible with Dolibarr version 6.
+# Theme Amarok2 for Dolibarr 11.x
+This is a theme i create some years ago, and try to improve and make it compatible with Dolibarr version 11.x.
 
 The theme is now compatible with Dolibarr 11 (work in progress)
 
