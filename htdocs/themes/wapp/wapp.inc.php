@@ -68,8 +68,8 @@ body {
 img.photo, img.photouserphoto,img.userphoto, img.inline-block, img.paddingright { width:16px; height:auto; }
 img.mycompany { height:32px; width:auto; padding-top:4px;}
 img.width50, img.dropdown-user-image { width:50px; height:auto; }
-img.img-skinthumb { width:160px; height:120px; }
-
+img.img-skinthumb { width:160px; height:120px; border-radius: .4em; border: none; padding:0; margin:0;}
+.shadow { box-shadow: 1px 1px 3px rgba(0,0,0,.3) !important; }
 td img { width:22px; height:auto; }
 
 
@@ -780,19 +780,33 @@ a.tabTitle img {
 	
 
 	/* Menus à gauche */
-	.id-container .side-nav {
-		top:120px; /* doit changer en fonction des icones */
+	li.menuhider a.menuhider { display:block; }
+	
+/* 	.sidebar-collapse { z-index: 9000 !important; background-color:red; display:inline-block; position:absolute; width:250px; top:36px; } */
+	
+	body.sidebar-collapse .id-container .side-nav { display:none; }
+	body .id-container .side-nav {
+		display:block;
+		position:absolute;
+		z-index:1000;
+		top:120px;
 		left:0;
 		width:250px;
 		bottom:0;
+		background: #cedce7;
+background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+background: -webkit-linear-gradient(-45deg, #cedce7 0%,#596a72 100%);
+background: linear-gradient(135deg, #cedce7 0%,#596a72 100%);
+		box-shadow: 0 0 6px rgba(0,0,0,.3);
+		-webkit-transition: all ease-in-out 2s;
 		}
 			
 	/* Partie à droite */
 	.id-container #id-right {
 		display:block;
 		position:absolute;
-		top: 120px; /* doit changer en fonction des icones */
-		left: 250px;
+		top: 120px;
+		left: 0px;
 		right:0;
 		bottom: 0 !important;
 		z-index:-1;
@@ -805,22 +819,33 @@ a.tabTitle img {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-/* 	.tmenu ul li a { color: green; } */
+
 	/* Menus en haut */
 	.side-nav-vert {
 		top:0;
 		left:0;
 		right:0;
 		width:100%;
-		height: 90px; /* doit changer en fonction des icones */
+		height: 90px;
 		}
 
 	/* Menus à gauche */
-	.id-container .side-nav {
-		top:90px; /* doit changer en fonction des icones */
+	li.menuhider a.menuhider { display:block; }
+	body.sidebar-collapse .id-container .side-nav { display:none; }
+	body .id-container .side-nav {
+		display:block;
+		position:absolute;
+		z-index:1000;
+		top:90px;
 		left:0;
 		width:250px;
 		bottom:0;
+		background: #cedce7;
+		background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+		background: -webkit-linear-gradient(-45deg, #cedce7 0%,#596a72 100%);
+		background: linear-gradient(135deg, #cedce7 0%,#596a72 100%);
+		box-shadow: 0 0 6px rgba(0,0,0,.3);
+		-webkit-transition: left linear 2s !important;
 		}
 		
 	/* Partie à droite */
@@ -828,7 +853,7 @@ a.tabTitle img {
 		display:block;
 		position:absolute;
 		top: 90px; /* doit changer en fonction des icones */
-		left: 250px;
+		left: 0px;
 		right:0;
 		bottom: 0 !important;
 		}
@@ -850,11 +875,15 @@ a.tabTitle img {
 		}
 
 	/* Menus à gauche */
-	.id-container .side-nav {
+	li.menuhider a.menuhider { display:none; }
+	body.sidebar-collapse .id-container .side-nav {
+		display:block;
 		top:72px; /* doit changer en fonction des icones */
 		left:0;
 		width:250px;
 		bottom:0;
+		background: none !important;
+		box-shadow: none;
 		}
 		
 	/* Partie à droite */
@@ -884,11 +913,15 @@ a.tabTitle img {
 		}
 
 	/* Menus à gauche */
-	.id-container .side-nav {
+	li.menuhider a.menuhider { display:none; }
+	body.sidebar-collapse .id-container .side-nav {
+		display:block;
 		top:72px; /* doit changer en fonction des icones */
 		left:0;
 		width:250px;
 		bottom:0;
+		background: none !important;
+		box-shadow: none;
 		}
 		
 	/* Partie à droite */
@@ -918,11 +951,15 @@ a.tabTitle img {
 		}
 
 	/* Menus à gauche */
-	.id-container .side-nav {
+	li.menuhider a.menuhider { display:none; }
+	body.sidebar-collapse .id-container .side-nav {
+		display:block;
 		top:36px; /* doit changer en fonction des icones */
 		left:0;
 		width:250px;
 		bottom:0;
+		background: none !important;
+		box-shadow: none;
 		}
 		
 	/* Partie à droite */
